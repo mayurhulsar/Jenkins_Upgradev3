@@ -3,9 +3,6 @@ job('First-Maven-Project-Via-DSL') {
     scm {
         git("https://github.com/mayurhulsar/Jenkins_Upgradev3.git", 'master')
     }
-    tools {
-        maven ('localmaven')
-    } 
     triggers {
         scm('* * * * *')
     }
